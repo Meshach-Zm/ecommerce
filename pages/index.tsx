@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import makeSerializable  from '../components/utils'
 import styles from '../styles/Home.module.css'
-import prisma from './client'
+import prisma from '../components/client'
 import Products from './productList'
 
 // Get Data from database
