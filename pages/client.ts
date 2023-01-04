@@ -2,10 +2,12 @@
 
 import { PrismaClient } from '@prisma/client'
 
-let prisma = new PrismaClient({
+export const prisma = new PrismaClient({
     rejectOnNotFound: {
         findUnique: true,
       },
 })
 
-export default prisma
+export default const successExport = () => {
+return null
+}
