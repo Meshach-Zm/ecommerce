@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Header from '../components/Header'
-import {  makeSerializable } from './lib/utils'
+import makeSerializable  from './lib/utils'
 import styles from '../styles/Home.module.css'
 import prisma from './client'
 import Products from './productList'
