@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import prisma from "../../client";
+import prisma from '../../../components/client'
+
 
 
 
