@@ -1,0 +1,163 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title  {
+  color: #08f300;
+  text-decoration: none;
+}
+.nav {
+  color: #ffffffea;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  text-decoration: underline;
+  color: #00f300;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.card > div > img {
+  height: auto;
+  width: 250px;
+
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* max-width: 800px; */
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #00f300;
+  border-color: #4df300;
+}
+
+.request:hover, .request:focus, .request:active {
+  color: #00f300;
+  text-decoration: underline;
+}
+
+.requestcontainer {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.prices p {
+  font-style: italic;
+  color: rgb(99, 218, 52);
+  padding:3px;
+  align-items: left;
+}
+
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+.request {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
