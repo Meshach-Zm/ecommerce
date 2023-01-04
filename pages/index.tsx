@@ -44,7 +44,7 @@ const Home  = ({allproducts}) => {
           {
               allproducts.map((item: any) => {
            return( 
-                  <div className={styles.card} key={item}>
+                  <div className={styles.card} key={item.id}>
                   <Products productData={item}    />
                   </div>
               )})
