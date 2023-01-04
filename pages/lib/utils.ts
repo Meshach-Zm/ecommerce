@@ -4,6 +4,6 @@ export function convertToJson (object: any)  {
     return JSON.stringify( object )
 }
 
-export function makeSerializable<T extends any> (o: T): T  {
+export default function makeSerializable<T extends any> (o: T): T  {
     return JSON.parse(JSON.stringify(o))
 }
