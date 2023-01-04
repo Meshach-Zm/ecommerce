@@ -1,5 +1,4 @@
 import styles from '../styles/Home.module.css'
-import React, { useState } from 'react'
 
 
 const Products = ({productData}) => {
