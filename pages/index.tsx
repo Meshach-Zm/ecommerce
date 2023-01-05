@@ -42,7 +42,7 @@ const Home  = ({allproducts}) => {
 
         <div className={styles.grid}>
           {
-              allproducts?.map((item: any) => {
+             allproducts && allproducts? allproducts: allproducts.map((item: any) => {
            return( 
                   <div className={styles.card} key={item.id}>
                   <Products productData={item}    />
