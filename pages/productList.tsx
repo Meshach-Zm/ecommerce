@@ -8,7 +8,7 @@ const Products = ({productData}) => {
 
   return (
     <>
-     <div key={productData.id}>  
+     <div key={productData?.id}>  
               <Image src={productData?.image} width={250} height={300} alt="product Data" />
               <h3>{productData?.name}</h3>
               <p>{productData?.description}</p>
