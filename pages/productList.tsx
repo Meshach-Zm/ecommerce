@@ -6,8 +6,8 @@ const Products = ({productData}) => {
 
   return (
     <>
-     <div>  
-           <img src={productData && productData.image? productData.image: productData.image} alt="product Data" />
+     <div key={productData.id}>  
+              <Image src={productData.image} width={250} height={300} alt="product Data" />
               <h3>{productData.name}</h3>
               <p>{productData.description}</p>
               <h4 >Prices</h4> <hr className={styles.hr}/>
